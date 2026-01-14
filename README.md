@@ -5,7 +5,8 @@ Feautures:
 - Drainage directions
 - Topographic index ln(a/tan(b))
 - Half basins
-Main steps:
+
+  Main steps:
 - Fill sinks (Wang & Liu algorithm)
 - Flow calculation and stream delineation
 - Raster to vector conversion
