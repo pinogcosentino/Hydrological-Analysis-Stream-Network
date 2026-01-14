@@ -12,5 +12,5 @@ Feautures:
 - Raster to vector conversion
 - Geometry smoothing
 
-#Requirements
+Requirements
 Processing SAGA provider enabled
