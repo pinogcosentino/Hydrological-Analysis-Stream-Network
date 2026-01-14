@@ -5,8 +5,8 @@ Feautures:
 - Drainage directions
 - Topographic index ln(a/tan(b))
 - Half basins
-  Main steps:
-  1 . Fill sinks (Wang & Liu algorithm)
-  2. Flow calculation and stream delineation
-  3. Raster to vector conversion
-  4.Geometry smoothing
+Main steps:
+- Fill sinks (Wang & Liu algorithm)
+- Flow calculation and stream delineation
+- Raster to vector conversion
+- Geometry smoothing
