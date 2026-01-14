@@ -11,3 +11,6 @@ Feautures:
 - Flow calculation and stream delineation
 - Raster to vector conversion
 - Geometry smoothing
+
+Requirements
+Processing SAGA provider enabled.
