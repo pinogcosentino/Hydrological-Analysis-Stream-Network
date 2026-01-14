@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 380.7 372.73">
+  <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #69b42d;
+      }
+
+      .st0, .st1, .st2, .st3, .st4 {
+        stroke-miterlimit: 10;
+      }
+
+      .st0, .st1, .st4 {
+        stroke: #1d1d1b;
+      }
+
+      .st1 {
+        fill: #238035;
+      }
+
+      .st2 {
+        stroke-width: 18px;
+      }
+
+      .st2, .st3 {
+        fill: none;
+        stroke: #28b0e6;
+      }
+
+      .st3 {
+        stroke-width: 35px;
+      }
+
+      .st4 {
+        fill: #f59d1e;
+      }
+    </style>
+  </defs>
+  <g id="Livello_2">
+    <polygon class="st1" points="0 171.55 91.24 11.7 115.48 0 135.94 24.58 160.18 66.24 183.67 60.18 214.37 57.15 269.27 166.24 0 171.55"/>
+    <polyline class="st0" points="269.27 166.24 384 171.55 298.82 44.65 260.94 40.48 244.27 32.15 214.37 57.15"/>
+    <polygon class="st4" points="380.7 372.73 0 372.73 0 171.55 266.96 166.24 380.7 171.55 380.7 372.73"/>
+  </g>
+  <g id="Livello_3">
+    <polyline class="st3" points="8.49 184.31 200.57 271.43 79.04 284.12 152.57 324.34 246.01 307.95 290.44 303.98 323.63 324.34 384 324.34"/>
+    <line class="st2" x1="380.7" y1="171.55" x2="380.7" y2="171.39"/>
+  </g>
+</svg>
