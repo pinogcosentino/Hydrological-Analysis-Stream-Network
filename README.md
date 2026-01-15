@@ -7,10 +7,10 @@ Algorithm for hydrological analysis that generates the drainage network from a d
 - Half basins
 
   # Main steps:
-- Fill sinks (Wang & Liu algorithm)
-- Flow calculation and stream delineation
-- Raster to vector conversion
-- Geometry smoothing
+1) Fill sinks (Wang & Liu algorithm)
+2) Flow calculation and stream delineation
+3) Raster to vector conversion
+4) Geometry smoothing
 
   # Requirements
-Processing SAGA provider enabled
+- Processing SAGA provider enabled
