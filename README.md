@@ -1,5 +1,8 @@
 # Hydrological-Analysis-Stream-Network
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18254583.svg)](https://doi.org/10.5281/zenodo.18254583)
+
+
 Algorithm for hydrological analysis that generates the drainage network from a digital terrain model (DTM)
 # Feautures: 
 - Vector stream network (raw and smoothed)
