@@ -1,4 +1,5 @@
 # Hydrological-Analysis-Stream-Network
+
 Algorithm for hydrological analysis that generates the drainage network from a digital terrain model (DTM)
 # Feautures: 
 - Vector stream network (raw and smoothed)
@@ -23,3 +24,6 @@ To do this in QGIS:
 1. Go to QGIS -> Plugins → Manage and Install Plugins…
 2. Search for "Processing Saga NextGen Provider" and select Install Plugin.
 3. Once the installation is complete, repeat the same steps to search for and install the "Hydrological Analysis Streams Network" plugin.
+
+![icon](https://github.com/user-attachments/assets/5179d2c6-c3c5-40a3-92f3-4e1bafff98b3)
+
