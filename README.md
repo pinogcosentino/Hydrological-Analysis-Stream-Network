@@ -20,6 +20,6 @@ Algorithm for hydrological analysis that generates the drainage network from a d
 # Installation
 Before installing the "Hydrological Analysis Streams Network" plugin, you must first install the "Processing Saga NextGen Provider".
 To do this in QGIS:
-1. Go to Plugins → Manage and Install Plugins…
+1. Go to QGIS -> Plugins → Manage and Install Plugins…
 2. Search for "Processing Saga NextGen Provider" and select Install Plugin.
 3. Once the installation is complete, repeat the same steps to search for and install the "Hydrological Analysis Streams Network" plugin.
