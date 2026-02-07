@@ -247,26 +247,32 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
         outputs = {}
 
         try:
-            # STEP 1: Fill sinks (Wang & Liu)
-            feedback.pushInfo(self.tr('Step 1/4: Filling DTM depressions...'))
+            # STEP 1: Fill sinks (Wang & Liu) - ALGORITMO AGGIORNATO
+            feedback.pushInfo(self.tr('Step 1/4: Filling DTM depressions (Wang & Liu)...'))
             
             alg_params = {
-                'ELEV': parameters[self.INPUT_DTM],
-                'MINSLOPE': parameters[self.MIN_SLOPE],
-                'FDIR': QgsProcessing.TEMPORARY_OUTPUT,
-                'FILLED': parameters[self.OUTPUT_FILLED_DTM],
-                'WSHED': QgsProcessing.TEMPORARY_OUTPUT
+                'BAND': 1,
+                'INPUT': parameters[self.INPUT_DTM],
+                'MIN_SLOPE': parameters[self.MIN_SLOPE],
+                'CREATION_OPTIONS': None,
+                'OUTPUT_FILLED_DEM': parameters[self.OUTPUT_FILLED_DTM]
             }
             
             outputs['FillSinksWangLiu'] = processing.run(
-                'sagang:fillsinkswangliu',
+                'native:fillsinkswangliu',  # CAMBIATO DA 'sagang:fillsinkswangliu'
                 alg_params,
                 context=context,
                 feedback=feedback,
                 is_child_algorithm=True
             )
             
-            results[self.OUTPUT_FILLED_DTM] = outputs['FillSinksWangLiu']['FILLED']
+            # Verifica che l'output sia valido
+            if not outputs['FillSinksWangLiu'] or 'OUTPUT_FILLED_DEM' not in outputs['FillSinksWangLiu']:
+                raise QgsProcessingException(
+                    self.tr('Error: Fill sinks algorithm did not produce valid output')
+                )
+            
+            results[self.OUTPUT_FILLED_DTM] = outputs['FillSinksWangLiu']['OUTPUT_FILLED_DEM']
             
             feedback.setCurrentStep(1)
             if feedback.isCanceled():
@@ -289,7 +295,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
                 'convergence': 5,
                 'depression': None,
                 'disturbed_land': None,
-                'elevation': outputs['FillSinksWangLiu']['FILLED'],
+                'elevation': outputs['FillSinksWangLiu']['OUTPUT_FILLED_DEM'],  # AGGIORNATO
                 'flow': None,
                 'max_slope_length': None,
                 'memory': 300,
@@ -373,7 +379,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
             
             results[self.OUTPUT_SMOOTH] = outputs['SmoothStream']['OUTPUT']
             
-            feedback.pushInfo(self.tr('Analysis completed successfully!'))
+            feedback.pushInfo(self.tr('✓ Hydrological analysis completed successfully!'))
             
             return results
             
