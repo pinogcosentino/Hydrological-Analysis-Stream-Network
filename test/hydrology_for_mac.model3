@@ -1,0 +1,1004 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="grass:r.to.vect_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="grass:r.to.vect" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1011.8561991869917" type="double" name="component_pos_x"/>
+        <Option value="814.6844512195123" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="r.to.vect" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="555.653963414634" type="double" name="component_pos_x"/>
+      <Option value="1031.6478658536585" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="grass:r.to.vect_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="vector streams raw">
+          <Option value="grass:r.to.vect_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="vector streams raw" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="1077.8058943089427" type="double" name="component_pos_x"/>
+          <Option value="1430.2891260162603" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="UTF-8" type="QString" name="fileEncoding"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="" type="QString" name="val"/>
+            </Option>
+          </Option>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="vector streams raw" type="QString" name="name"/>
+          <Option value="output" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="-b">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-s">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-t">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-v">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-z">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_OUTPUT_TYPE_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_CELLSIZE_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_VECTOR_DSCO">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_VECTOR_EXPORT_NOCAT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_VECTOR_LCO">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="column">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="value" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="input">
+          <Option type="Map">
+            <Option value="grass:r.watershed_1" type="QString" name="child_id"/>
+            <Option value="stream" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="type">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="grass:r.watershed_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="grass:r.watershed" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1011.8561991869917" type="double" name="component_pos_x"/>
+        <Option value="664.3602642276423" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="r.watershed" type="QString" name="component_description"/>
+      <Option value="32.18800813008136" type="double" name="component_height"/>
+      <Option value="393.94664634146324" type="double" name="component_pos_x"/>
+      <Option value="759.6844512195123" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="grass:r.watershed_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Delineate Stream">
+          <Option value="grass:r.watershed_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="Delineate Stream" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="944.6122967479673" type="double" name="component_pos_x"/>
+          <Option value="773.9486788617888" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Delineate Stream" type="QString" name="name"/>
+          <Option value="stream" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+        <Option type="Map" name="Drainage direction">
+          <Option value="grass:r.watershed_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="Input: DTM pulito (senza avvallamenti chiusi - sinks o pits).  &quot;fill sinks&quot;.&#xa;Processo: Per ogni cella, il software confronta la sua quota con quella delle 8 vicine (D8), calcola le pendenze e identifica quella più ripida in discesa.&#xa;Output: Un raster delle direzioni di flusso, dove il valore di ogni cella non è un'altezza, ma un codice di direzione.&#xa;&#xa;Per ogni singola cella della griglia (pixel) del DTM, il calcolo della drainage direction risponde alla domanda: &quot;Se una goccia d'acqua cade su questa cella, in quale delle 8 celle vicine  scorrerà?&quot; La scelta è basata sulla pendenza più ripida (massimo dislivello) tra la cella in esame e le sue adiacenti.&#xa;&#xa;Calcolo della Direzione di Flusso (Drainage Direction)&#xa;Per ogni cella, GRASS non si limita al semplice D8. Utilizza un algoritmo di ricerca del flusso che considera una finestra più ampia per determinare la direzione di deflusso verso la cella più lontana in discesa, non solo la vicina." type="QString" name="component_description"/>
+            <Option value="145.33333333333326" type="double" name="component_height"/>
+            <Option value="1434.666666666667" type="double" name="component_pos_x"/>
+            <Option value="902.6666666666662" type="double" name="component_pos_y"/>
+            <Option value="649.3333333333329" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="Drainage direction" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="942.6133130081299" type="double" name="component_pos_x"/>
+          <Option value="902.6331300813008" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Drainage direction" type="QString" name="name"/>
+          <Option value="drainage" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+        <Option type="Map" name="Half Basin">
+          <Option value="grass:r.watershed_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="Half Basin" type="QString" name="component_description"/>
+          <Option value="32.18800813008136" type="double" name="component_height"/>
+          <Option value="951.2276422764227" type="double" name="component_pos_x"/>
+          <Option value="731.2277470493284" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Half Basin" type="QString" name="name"/>
+          <Option value="half_basin" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+        <Option type="Map" name="Topographic index ln(a/tanb)">
+          <Option value="grass:r.watershed_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="L'indice topografico ln(a/tanβ) è un parametro fondamentale nell'idrologia, e indica la propensione di un punto del territorio a generare ruscellamento superficiale o ad essere saturo d'acqua. È chiamato più precisamente Topographic Wetness Index (TWI)&#xa;Cosa rappresentano i termini:&#xa;a = Area del bacino contribuente specifica (specific catchment area). È l'area totale a monte che drena verso quel punto, per unità di larghezza di contorno. Rappresenta il volume d'acqua che converge verso il punto.&#xa;*tanβ= Pendenza locale (tangente dell'angolo di pendio). Rappresenta la forza di drenaggio gravitazionale che allontana l'acqua dal punto.&#xa;*ln = Logaritmo naturale, usato per linearizzare la relazione.&#xa;Interpretazione fisica (cosa ti indica):&#xa;L'indice combina due forze opposte:&#xa;1.  La convergenza d'acqua (a): Più 'a' è grande, più acqua arriva al punto, aumentando la probabilità di saturazione.&#xa;2.  La capacità di drenaggio (tanβ): Più 'tanβ' è grande (pendenza ripida), più velocemente l'acqua defluisce, riducendo la saturazione.&#xa;&#xa;Quindi, un valore ALTO dell'indice ln(a/tanβ) indica:&#xa;- Condizioni di potenziale saturazione: Punti del paesaggio dove converge molta acqua da monte ('a' grande) su un versante piano ('tanβ'piccolo).&#xa;- Alta probabilità di generare ruscellamento superficiale (runoff): Quando il terreno è saturo, anche una piccola pioggia in più non può infiltrarsi e genera deflusso superficiale immediato.&#xa;-Zone di accumulo di umidità:Aree come fondivalle, concavità, piedi dei versanti.&#xa;&#xa;Un valore BASSO dell'indice indica:&#xa;- Condizioni secche: Posti su pendii ripidi ('tanβ' grande) o dorsali ('a' piccola), dove l'acqua defluisce rapidamente o non converge.&#xa;- Alta capacità di infiltrazione: Il suolo tende a rimanere non saturo.&#xa;&#xa;Applicazioni pratiche:&#xa;L'indice è usato per mappare:&#xa;1.  Zone soggette a saturazione e ristagno (aree umide, zone ripari).&#xa;2.  Aree sorgente di deflusso superficiale durante gli eventi piovosi.&#xa;3.  La variabilità spaziale dell'umidità del suolo in un bacino.&#xa;4.  La potenziale localizzazione di processi di erosione o movimenti di massa (frane da saturazione).&#xa;" type="QString" name="component_description"/>
+            <Option value="348" type="double" name="component_height"/>
+            <Option value="1432.0000000000005" type="double" name="component_pos_x"/>
+            <Option value="1182.6666666666665" type="double" name="component_pos_y"/>
+            <Option value="649.3333333333337" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="Topographic index ln(a/tanb)" type="QString" name="component_description"/>
+          <Option value="32.66666666666663" type="double" name="component_height"/>
+          <Option value="943.2799796747967" type="double" name="component_pos_x"/>
+          <Option value="1025.2997967479678" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Topographic index ln(a/tanb)" type="QString" name="name"/>
+          <Option value="tci" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="-4">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-a">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-b">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-m">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="-s">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_RASTER_FORMAT_META">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_RASTER_FORMAT_OPT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_CELLSIZE_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="blocking">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="convergence">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="5" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="depression">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="disturbed_land">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="elevation">
+          <Option type="Map">
+            <Option value="native:fillsinkswangliu_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT_FILLED_DEM" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="flow">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="max_slope_length">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="memory">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="300" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="threshold">
+          <Option type="Map">
+            <Option value="minimun_size_of_exterior_watershade_basin" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:fillsinkswangliu_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:fillsinkswangliu" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="482.2530487804878" type="double" name="component_pos_x"/>
+        <Option value="356.4994918699187" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Fill sinks (Wang &amp; Liu)" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="591.8561991869917" type="double" name="component_pos_x"/>
+      <Option value="609.3602642276423" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:fillsinkswangliu_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Filled DTM (Wang &amp; Liu)">
+          <Option value="native:fillsinkswangliu_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="Filled DTM (Wang &amp; Liu)" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="967.3084349593495" type="double" name="component_pos_x"/>
+          <Option value="630.736280487805" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Filled DTM (Wang &amp; Liu)" type="QString" name="name"/>
+          <Option value="OUTPUT_FILLED_DEM" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BAND">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="CREATION_OPTIONS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="digital_terrain_model_dtm" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MIN_SLOPE">
+          <Option type="Map">
+            <Option value="minimum_slope_degree" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:smoothgeometry_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:smoothgeometry" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1011.8561991869917" type="double" name="component_pos_x"/>
+        <Option value="1115.981199186992" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="smooth streams" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="657.191056910569" type="double" name="component_pos_x"/>
+      <Option value="1456.9461382113823" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:smoothgeometry_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="smooth streams">
+          <Option value="native:smoothgeometry_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="smooth streams" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="1019.2078252032519" type="double" name="component_pos_x"/>
+          <Option value="1630.3897357723579" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="UTF-8" type="QString" name="fileEncoding"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+            </Option>
+          </Option>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="smooth streams" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="grass:r.to.vect_1" type="QString" name="child_id"/>
+            <Option value="output" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ITERATIONS">
+          <Option type="Map">
+            <Option value="iterations" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MAX_ANGLE">
+          <Option type="Map">
+            <Option value="maximum_nodecornervertex_angle" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OFFSET">
+          <Option type="Map">
+            <Option value="offset" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="delineate_stream">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="UTF-8" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option value="dtm_afcd5e5c_295e_4c2f_b024_944204a01e9a" type="QString" name="digital_terrain_model_dtm"/>
+    <Option type="QgsProcessingOutputLayerDefinition" name="drainage_direction">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="UTF-8" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="filled_dtm_wang__liu">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="UTF-8" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="half_basin">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="UTF-8" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="smooth_streams">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="UTF-8" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="topographic_index_lnatanb">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="UTF-8" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="QgsProcessingOutputLayerDefinition" name="vector_streams">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="UTF-8" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option value="Version2" type="QString" name="internal_version"/>
+  <Option name="modelVariables"/>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="hydrology_for_mac" type="QString" name="model_name"/>
+  <Option value="" type="QString" name="outputGroup"/>
+  <Option name="outputOrder"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="delineate_stream">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Delineate Stream" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="grass:r.watershed_1" type="QString" name="_modelChildId"/>
+        <Option value="Delineate Stream" type="QString" name="_modelChildOutputName"/>
+        <Option value="grass" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="delineate_stream" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="digital_terrain_model_dtm">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Digital Terrain Model (DTM)" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="digital_terrain_model_dtm" type="QString" name="name"/>
+      <Option value="raster" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="drainage_direction">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Drainage direction" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="grass:r.watershed_1" type="QString" name="_modelChildId"/>
+        <Option value="Drainage direction" type="QString" name="_modelChildOutputName"/>
+        <Option value="grass" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="drainage_direction" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="filled_dtm_wang__liu">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Filled DTM (Wang &amp; Liu)" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option value="Depression-free digital elevation model." type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="native:fillsinkswangliu_1" type="QString" name="_modelChildId"/>
+        <Option value="Filled DTM (Wang &amp; Liu)" type="QString" name="_modelChildOutputName"/>
+        <Option value="native" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="filled_dtm_wang__liu" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="half_basin">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Half Basin" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="grass:r.watershed_1" type="QString" name="_modelChildId"/>
+        <Option value="Half Basin" type="QString" name="_modelChildOutputName"/>
+        <Option value="grass" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="half_basin" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="iterations">
+      <Option value="0" type="int" name="data_type"/>
+      <Option value="1" type="double" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="iterations" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="1.7976931348623157e+308" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="1" type="double" name="min"/>
+      <Option value="iterations" type="QString" name="name"/>
+      <Option value="number" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="maximum_nodecornervertex_angle">
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="180" type="double" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Maximum node/corner/vertex angle" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="360" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="0" type="double" name="min"/>
+      <Option value="maximum_nodecornervertex_angle" type="QString" name="name"/>
+      <Option value="number" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="minimum_slope_degree">
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="0.1" type="double" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Minimum Slope [Degree]" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="90" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="0.1" type="double" name="min"/>
+      <Option value="minimum_slope_degree" type="QString" name="name"/>
+      <Option value="number" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="minimun_size_of_exterior_watershade_basin">
+      <Option value="0" type="int" name="data_type"/>
+      <Option value="100" type="double" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Minimun size of exterior watershade basin" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="1.7976931348623157e+308" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="-1.7976931348623157e+308" type="double" name="min"/>
+      <Option value="minimun_size_of_exterior_watershade_basin" type="QString" name="name"/>
+      <Option value="number" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="offset">
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="0.25" type="double" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="offset" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="1.7976931348623157e+308" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="-1.7976931348623157e+308" type="double" name="min"/>
+      <Option value="offset" type="QString" name="name"/>
+      <Option value="number" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="smooth_streams">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
+        <Option type="Map">
+          <Option type="Map" name="create_options">
+            <Option value="UTF-8" type="QString" name="fileEncoding"/>
+          </Option>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="smooth streams" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="native:smoothgeometry_1" type="QString" name="_modelChildId"/>
+        <Option value="smooth streams" type="QString" name="_modelChildOutputName"/>
+        <Option value="native" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="smooth_streams" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_append"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="topographic_index_lnatanb">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Topographic index ln(a/tanb)" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="grass:r.watershed_1" type="QString" name="_modelChildId"/>
+        <Option value="Topographic index ln(a/tanb)" type="QString" name="_modelChildOutputName"/>
+        <Option value="grass" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="topographic_index_lnatanb" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="vector_streams_raw">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
+        <Option type="Map">
+          <Option type="Map" name="create_options">
+            <Option value="UTF-8" type="QString" name="fileEncoding"/>
+          </Option>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="" type="QString" name="val"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="vector streams raw" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="grass:r.to.vect_1" type="QString" name="_modelChildId"/>
+        <Option value="vector streams raw" type="QString" name="_modelChildOutputName"/>
+        <Option value="grass" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="vector_streams_raw" type="QString" name="name"/>
+      <Option value="vectorDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="StringList" name="parameterOrder">
+    <Option value="digital_terrain_model_dtm" type="QString"/>
+    <Option value="minimum_slope_degree" type="QString"/>
+    <Option value="minimun_size_of_exterior_watershade_basin" type="QString"/>
+    <Option value="iterations" type="QString"/>
+    <Option value="maximum_nodecornervertex_angle" type="QString"/>
+    <Option value="offset" type="QString"/>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="digital_terrain_model_dtm">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="INPUT" type="QString" name="component_description"/>
+        <Option value="33.333333333333314" type="double" name="component_height"/>
+        <Option value="393.5873983739837" type="double" name="component_pos_x"/>
+        <Option value="262.2098577235772" type="double" name="component_pos_y"/>
+        <Option value="93.33333333333337" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="digital_terrain_model_dtm" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="168.47662601626016" type="double" name="component_pos_x"/>
+      <Option value="270.2190040650407" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="digital_terrain_model_dtm" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="iterations">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="425.364837398374" type="double" name="component_pos_x"/>
+        <Option value="956.0137195121952" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="iterations" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="272.13262195121956" type="double" name="component_pos_x"/>
+      <Option value="1268.7042682926833" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="iterations" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="maximum_nodecornervertex_angle">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="586.6290650406504" type="double" name="component_pos_x"/>
+        <Option value="1212.7886178861784" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="maximum_nodecornervertex_angle" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="258.28760162601634" type="double" name="component_pos_x"/>
+      <Option value="1552.8983739837397" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="maximum_nodecornervertex_angle" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="minimum_slope_degree">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="616.920731707317" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="minimum_slope_degree" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="527.9621443089432" type="double" name="component_pos_x"/>
+      <Option value="372.88516260162595" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="minimum_slope_degree" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="minimun_size_of_exterior_watershade_basin">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="917.8770325203252" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="minimun_size_of_exterior_watershade_basin" type="QString" name="component_description"/>
+      <Option value="52.974085365853625" type="double" name="component_height"/>
+      <Option value="183.4560467479675" type="double" name="component_pos_x"/>
+      <Option value="523.3107215447154" type="double" name="component_pos_y"/>
+      <Option value="205.4700203252032" type="double" name="component_width"/>
+      <Option value="minimun_size_of_exterior_watershade_basin" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="offset">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="463.00660569105685" type="double" name="component_pos_x"/>
+        <Option value="1120.892276422764" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="offset" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="256.30487804878044" type="double" name="component_pos_x"/>
+      <Option value="1413.891260162602" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="offset" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+  </Option>
+</Option>
