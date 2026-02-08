@@ -17,7 +17,7 @@ Algorithm for hydrological analysis that generates the drainage network from a d
 4) Geometry smoothing
 
 # Requirements
-- Processing SAGA NextGen provider enabled
+- version QGIS 3.44.7 and later
 - GDAL/Processing are included with QGIS.
 - Grass/Processing are included with QGIS.
 
