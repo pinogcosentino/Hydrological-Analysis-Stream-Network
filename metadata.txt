@@ -4,26 +4,49 @@
 
 [general]
 name=Hydrological Analysis Stream Network
-qgisMinimumVersion=3.0
+qgisMinimumVersion=3.16
+qgisMaximumVersion=4.99
 description=Algorithm for hydrological analysis that generates the drainage network from a digital terrain model (DTM)
-version=1.1
-author=G. Cosentino, F. Pennica
+version=2.0.0
+author=Giuseppe Cosentino (Pino), Francesco Pennica
 email=giuseppe.cosentino@cnr.it
 
-about=Algorithm for hydrological analysis that generates the drainage network from a digital terrain model (DTM). Feautures: - Vector stream network (raw and smoothed) - Drainage directions - Topographic index ln(a/tan(b)) - Half basins Main steps: 1 . Fill sinks (Wang & Liu algorithm) 2. Flow calculation and stream delineation 3. Raster to vector conversion 4.Geometry smoothing
+about=Algorithm for hydrological analysis that generates the drainage network from a digital terrain model (DTM).
+
+	Main feautures: 
+	- Vector stream network (raw and smoothed)
+	- Drainage directions 
+	- Topographic index ln(a/tan(b))
+	- Half basins. 
+
+	Main steps: 
+	1) Fill sinks (Wang & Liu algorithm) 
+	2) Flow calculation and stream delineation 
+	3) Raster to vector conversion 
+	4) Geometry smoothing
 
 tracker=https://github.com/pinogcosentino/Hydrological-Analysis-Stream-Network/issues
-repository=https://github.com/pinogcosentino/Hydrological-Analysis-Stream-Networkrepo
+repository=https://github.com/pinogcosentino/Hydrological-Analysis-Stream-Network
+
 # End of mandatory metadata
 
 # Recommended items:
 
 hasProcessingProvider=yes
-# Uncomment the following line and add your changelog:
-# changelog=
+
+changelog=
+	<b>v2.0.0:</b>
+		- Full compatibility with QGIS 4.x (PyQt6, Qt6 enums)
+		- Backward compatible with QGIS 3.16+ (PyQt5)
+		- Updated enum references: Qgis.ProcessingSourceType, QgsProcessingParameterNumber.Type
+	<b>v1.1.1:</b>
+		- Fixed some minor issues
+	<b>v1.1.0:</b>
+		- Updated Fill Sinks algorithm to native:fillsinkswangliu
+		- Improved error handling
 
 # Tags are comma separated with spaces allowed
-tags=geoprocessing, hydrology, hazard, geology, python
+tags=hydrology, geoprocessing, hazard, geology, python
 
 homepage=https://github.com/pinogcosentino/Hydrological-Analysis-Stream-Network
 category=Analysis
@@ -44,4 +67,3 @@ Category of the plugin: Raster, Vector, Database or Web
 
 # If the plugin can run on QGIS Server.
 server=False
-
