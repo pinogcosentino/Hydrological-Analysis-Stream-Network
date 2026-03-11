@@ -39,10 +39,30 @@ from qgis.core import (
     QgsProcessingParameterVectorDestination,
     QgsProcessingParameterRasterDestination,
     QgsProcessingParameterFeatureSink,
-    QgsProcessingException
+    QgsProcessingException,
+    Qgis
 )
 from qgis.PyQt.QtCore import QCoreApplication
 import processing
+
+# ============================================================================
+# QGIS 4.0 / Qt6 compatibility
+# ============================================================================
+if Qgis.QGIS_VERSION_INT >= 40000:
+    # Source types
+    _TYPE_LINE      = Qgis.ProcessingSourceType.VectorLine
+
+    # Number types
+    _NUMBER_DOUBLE  = QgsProcessingParameterNumber.Type.Double
+    _NUMBER_INTEGER = QgsProcessingParameterNumber.Type.Integer
+
+else:
+    # Source types
+    _TYPE_LINE      = QgsProcessing.TypeVectorLine
+
+    # Number types
+    _NUMBER_DOUBLE  = QgsProcessingParameterNumber.Double
+    _NUMBER_INTEGER = QgsProcessingParameterNumber.Integer
 
 
 class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
@@ -117,7 +137,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
             QgsProcessingParameterNumber(
                 self.MIN_SLOPE,
                 self.tr('Minimum slope (degrees)'),
-                type=QgsProcessingParameterNumber.Double,
+                type=_NUMBER_DOUBLE,           # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Double
                 minValue=0.01,
                 maxValue=90,
                 defaultValue=0.1
@@ -128,7 +148,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
             QgsProcessingParameterNumber(
                 self.MIN_BASIN_SIZE,
                 self.tr('Minimum basin size (cells)'),
-                type=QgsProcessingParameterNumber.Integer,
+                type=_NUMBER_INTEGER,          # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Integer
                 minValue=1,
                 defaultValue=100
             )
@@ -138,7 +158,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
             QgsProcessingParameterNumber(
                 self.ITERATIONS,
                 self.tr('Smoothing iterations'),
-                type=QgsProcessingParameterNumber.Integer,
+                type=_NUMBER_INTEGER,          # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Integer
                 minValue=1,
                 maxValue=10,
                 defaultValue=1
@@ -149,7 +169,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
             QgsProcessingParameterNumber(
                 self.MAX_ANGLE,
                 self.tr('Maximum vertex angle (degrees)'),
-                type=QgsProcessingParameterNumber.Integer,
+                type=_NUMBER_INTEGER,          # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Integer
                 minValue=0,
                 maxValue=360,
                 defaultValue=180
@@ -160,7 +180,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
             QgsProcessingParameterNumber(
                 self.OFFSET,
                 self.tr('Smoothing offset'),
-                type=QgsProcessingParameterNumber.Double,
+                type=_NUMBER_DOUBLE,           # ← QGIS 4.0: QgsProcessingParameterNumber.Type.Double
                 minValue=0.01,
                 maxValue=1.0,
                 defaultValue=0.25
@@ -172,7 +192,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
             QgsProcessingParameterVectorDestination(
                 self.OUTPUT_VECTOR_RAW,
                 self.tr('Raw stream network (vector)'),
-                type=QgsProcessing.TypeVectorLine,
+                type=_TYPE_LINE,               # ← QGIS 4.0: Qgis.ProcessingSourceType.VectorLine
                 createByDefault=True,
                 defaultValue=None
             )
@@ -182,7 +202,7 @@ class HydrologicalAnalysisStreams(QgsProcessingAlgorithm):
             QgsProcessingParameterFeatureSink(
                 self.OUTPUT_SMOOTH,
                 self.tr('Smoothed stream network'),
-                type=QgsProcessing.TypeVectorLine,
+                type=_TYPE_LINE,               # ← QGIS 4.0: Qgis.ProcessingSourceType.VectorLine
                 createByDefault=True,
                 defaultValue=None
             )
