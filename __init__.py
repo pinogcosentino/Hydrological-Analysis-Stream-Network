@@ -36,4 +36,4 @@ def classFactory(iface):  # pylint: disable=invalid-name
     """
     #
     from .hydrological_analysis import HydrologyPlugin
-    return HydrologyPlugin()
+    return HydrologyPlugin(iface)

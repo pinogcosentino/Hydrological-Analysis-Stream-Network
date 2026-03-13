@@ -7,7 +7,7 @@ name=Hydrological Analysis Stream Network
 qgisMinimumVersion=3.16
 qgisMaximumVersion=4.99
 description=Algorithm for hydrological analysis that generates the drainage network from a digital terrain model (DTM)
-version=2.0.0
+version=2.0.1
 author=Giuseppe Cosentino (Pino), Francesco Pennica
 email=giuseppe.cosentino@cnr.it
 
@@ -35,6 +35,9 @@ repository=https://github.com/pinogcosentino/Hydrological-Analysis-Stream-Networ
 hasProcessingProvider=yes
 
 changelog=
+	
+	<b>v2.0.1:</b>
+		- Inserted icon into the QGIS menu bar
 	<b>v2.0.0:</b>
 		- Full compatibility with QGIS 4.x (PyQt6, Qt6 enums)
 		- Backward compatible with QGIS 3.16+ (PyQt5)
